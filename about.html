@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درباره ما و داستان چنور | Chnoor Shop</title>
+  <meta name="description" content="آشنایی با چنور، هنرمند و طراح دست‌سازه‌های شیشه‌ای و ویترای. داستان شکل‌گیری کارگاه هنری و باورهای ما در خلق آثار ماندگار." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#f6d9fa",
+            "secondary": "#54651e",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#f6d9fa",
+            "secondary-fixed": "#d7ec95",
+            "surface-container": "#fde7ff",
+            "on-background": "#26152c",
+            "inverse-surface": "#3c2942",
+            "outline-variant": "#cec3cc",
+            "outline": "#7d757d",
+            "secondary-fixed-dim": "#bbcf7c",
+            "on-error": "#ffffff",
+            "surface-dim": "#edd1f2",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "secondary-container": "#d7ec95",
+            "on-secondary-fixed": "#161e00",
+            "inverse-primary": "#dbbce2",
+            "on-surface": "#26152c",
+            "on-surface-variant": "#4b454c",
+            "on-primary-container": "#513a5a",
+            "surface-tint": "#6e5676",
+            "tertiary": "#5f5e5a",
+            "on-primary-fixed-variant": "#553e5e",
+            "on-primary-fixed": "#271330",
+            "primary": "#6e5676",
+            "primary-container": "#c3a6cb",
+            "background": "#fff7fb",
+            "on-tertiary-container": "#43433f",
+            "primary-fixed-dim": "#dbbce2",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#3d4c05",
+            "surface-container-high": "#fbdfff",
+            "inverse-on-surface": "#feebff",
+            "surface-bright": "#fff7fb",
+            "tertiary-container": "#b2b0aa",
+            "on-tertiary-fixed-variant": "#474743",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#ffeffe",
+            "tertiary-fixed": "#e5e2dc",
+            "surface": "#fff7fb",
+            "primary-fixed": "#f7d8ff",
+            "tertiary-fixed-dim": "#c9c6c1",
+            "on-tertiary-fixed": "#1c1c18",
+            "on-secondary-container": "#5a6b24"
+          },
+          fontFamily: {
+            "headline": ["'Vazirmatn'", "'Literata'", "serif"],
+            "body": ["'Vazirmatn'", "sans-serif"]
+          },
+          spacing: {
+            "gutter": "24px",
+            "margin-mobile": "16px",
+            "margin-desktop": "64px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- TopNavBar -->
+  <header class="glass-nav sticky top-0 w-full z-50 flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop py-4 shadow-sm">
+    <div class="flex items-center gap-3 flex-row-reverse">
+      <button data-mobile-menu-trigger class="md:hidden p-2 rounded-xl text-primary hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+      </button>
+      <a href="index.html" class="font-headline text-2xl md:text-3xl font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight">
+        Chnoor Shop
+      </a>
+    </div>
+
+    <nav class="hidden md:flex flex-row-reverse gap-8 items-center font-semibold text-sm">
+      <a href="contact.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">تماس با ما</a>
+      <a href="about.html" class="text-primary font-bold border-b-2 border-primary pb-1 px-3 py-1">درباره ما</a>
+      <a href="custom-order.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">سفارش اختصاصی</a>
+      <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">گالری</a>
+      <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">فروشگاه</a>
+      <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">خانه</a>
+    </nav>
+
+    <div class="flex items-center gap-3 text-primary">
+      <button data-search-trigger title="جستجو" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="search">search</span>
+      </button>
+      <button data-cart-trigger title="سبد خرید" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="shopping_bag">shopping_bag</span>
+        <span id="cart-badge" class="absolute -top-1 -right-1 bg-secondary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <button onclick="window.location.href='products.html'" title="علاقه‌مندی‌ها" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative hidden sm:flex cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="favorite">favorite</span>
+        <span id="wishlist-badge" class="absolute -top-1 -right-1 bg-primary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <a href="https://t.me/chnoorshopbot" target="_blank" title="پشتیبانی تلگرام" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20">
+    
+    <!-- Hero About Intro Section (Stitch Grid Layout) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24 fade-up">
+      <!-- Portrait Column (5 cols) -->
+      <div class="lg:col-span-5">
+        <div class="relative">
+          <div class="w-full aspect-[4/5] rounded-3xl overflow-hidden glass-panel p-2 shadow-2xl border border-white/60">
+            <img 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbhEsjwjGS9zjSOmSm7QRvQOMCl6NPGA0In37SXJV-VebGd8r32ZL2dmOKSqXZiC2L_KBzn6_mYIRfJMjGkdaZYJXkbQybJ8tux0X2NEZieApWGXIp0Oz4ctEYvVCdrfo5v5n3kvgaKqEeKm0jL-F0mW0O61hJJGFIlnjylLGa5-M8lalbfR4pfoYhzYy2ZQLYNre9Q_gjOezEPCczZpeN8mXYS7ktJVdglsOLHB__CZl-K1D3Rtco" 
+              alt="چنور - هنرمند و طراح ویترای" 
+              class="w-full h-full object-cover rounded-2xl" 
+            />
+          </div>
+          <!-- Floating Accent Card -->
+          <div class="absolute -bottom-6 -right-6 glass-panel px-5 py-3 rounded-2xl shadow-xl border border-white flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+            </div>
+            <div>
+              <span class="font-headline text-xs font-bold text-on-surface block">بیش از ۵ سال تجربه</span>
+              <span class="text-[11px] text-outline">خلق دست‌سازه‌های شیشه‌ای</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio Column (7 cols) -->
+      <div class="lg:col-span-7 flex flex-col gap-6">
+        <div>
+          <span class="inline-block bg-primary/10 text-primary font-bold text-xs px-3.5 py-1.5 rounded-full mb-3">
+            هنرمند و طراح شیشه
+          </span>
+          <h1 class="font-headline text-3xl md:text-5xl text-primary font-black mb-4 leading-tight">
+            درباره من و هنر چنور
+          </h1>
+          <div class="w-20 h-1 bg-secondary rounded-full mb-6"></div>
+        </div>
+
+        <p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
+          سلام، من <strong class="text-primary font-bold">چنور</strong> هستم. از دوران کودکی همواره مجذوب رقص نور و رنگ در پنجره‌های ارسی، کاشی‌کاری‌ها و شیشه‌های رنگین معماری کهن ایرانی بودم. در دنیای پرهیاهوی امروز، ویترای برای من پناهگاهی است که در آن می‌توان به شیشه‌های خام و بی‌روح، زندگی و نوری شاعرانه بخشید.
+        </p>
+
+        <p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
+          در کارگاه چنور، هر خط دورگیر با دست و هر قطره رنگ با وسواس ترکیب می‌شود تا در برابر تابش آفتاب و گذر سال‌ها همچنان زنده، درخشان و الهام‌بخش باقی بماند. هدف من فقط خلق یک تابلو یا شیء تزیینی نیست؛ هدف من آوردن آرامش، لطافت و انرژی مثبت به لحظات زندگی شماست.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="products.html" class="bg-primary hover:bg-secondary text-white font-bold text-sm px-8 py-3.5 rounded-xl shadow-lg transition-all duration-200">
+            مشاهده گالری آثار
+          </a>
+          <a href="custom-order.html" class="bg-white hover:bg-surface-variant text-primary border border-primary/30 font-bold text-sm px-8 py-3.5 rounded-xl transition-all duration-200">
+            سفارش طرح دلخواه شما
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Values Section (باورها و ارزش‌های ما) -->
+    <div class="mb-24">
+      <div class="text-center mb-14 fade-up">
+        <h2 class="font-headline text-2xl md:text-3xl text-on-background font-bold mb-3">اصول و تعهدات ما در هر اثر</h2>
+        <p class="text-sm text-outline max-w-lg mx-auto">چرا دست‌سازه‌های چنور از ارزش هنری و کیفیت ماندگار برخوردارند؟</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-3xl text-center flex flex-col items-center">
+          <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-3xl" data-icon="brush">brush</span>
+          </div>
+          <h3 class="font-headline text-lg font-bold text-on-surface mb-3">اصالت ۱۰۰٪ کار دست</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            هیچ اثری از چاپ یا فرآیند صنعتی تولید نمی‌شود. هر طرح با قلم‌مو و دورگیرهای دست‌ساز به صورت کاملاً اختصاصی و منحصر‌به‌فرد اجرا می‌گردد.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl text-center flex flex-col items-center">
+          <div class="w-16 h-16 rounded-2xl bg-secondary/15 text-secondary flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-3xl" data-icon="verified">verified</span>
+          </div>
+          <h3 class="font-headline text-lg font-bold text-on-surface mb-3">ماندگاری و مقاومت UV</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            استفاده از تخصصی‌ترین رنگ‌های پایه تینر و فیکساتیوهای ضد اشعه فرابنفش، تضمین می‌کند که شفافیت و درخشش رنگ‌ها در برابر نور خورشید کدر نخواهد شد.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl text-center flex flex-col items-center">
+          <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-3xl" data-icon="all_inclusive">all_inclusive</span>
+          </div>
+          <h3 class="font-headline text-lg font-bold text-on-surface mb-3">پیوند سنت با مدرنیته</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            طراحی‌های ما ترکیبی هوشمندانه از نقوش اسلیمی، هندسه مقدس ایرانی و فرم‌های مینیمال معاصر است که با هر سبک دکوراسیونی هماهنگ می‌شود.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workshop Gallery Process -->
+    <div class="glass-panel rounded-3xl p-8 md:p-14 border border-white/60 mb-20">
+      <div class="text-center mb-10">
+        <span class="text-xs font-bold text-secondary uppercase tracking-wider block mb-2">گوشه‌هایی از استودیو</span>
+        <h2 class="font-headline text-2xl md:text-3xl text-primary font-black">فرآیند خلق و جان‌بخشی به شیشه</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrkMFzmCpPueplt69ipIzowcSJwm4b8isf_4lNTEE2ndZBuYHIH2ABrrZYkoKDnyb0nKCr5XVN6QXcXVA67bzcCW2GuwqIzeJSmsCqwNNmcLvnwY9V_rHdSg1S0hieHT2yTcyLm6W5Ho_0uEWT_Du5AbpqGCHtBeKX8IPc_5PxyX6Ou8o71Ap7qV8QAS9VqGAtPd0fEdAaCpecLC1NtVBdH1k8M_GG-WegUq70zxRJD_C81MRjoG3c" alt="فرآیند طراحی" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        </div>
+        <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv9OODfMJwooap8t7w0g2CybP4ZJQgPLTtVSBPrsW5V2m_omiCEmTm8_K3oGmL_fHecIImn-TIZJlF_-YO7Q3HFWxQRKCJ5buaWdNI2mpfi7d2wnDVLxDerROxP7y8sXTvLSP_xjy9shqKiG6vujYFQEsI6yz9hjbZSKoxQhuOASc8VRoKTErYb_qGZKrD30-A-jndH9NyLkt_X6hh16o2MUm6PUqRDRbhzG57BQFvlSFUkNf8eRx7" alt="رنگ‌آمیزی با قلم‌مو" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        </div>
+        <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV7ocfY2WFTtAAn1LD9quCuiivrrw3j2k_q39Wyv04qzoqnD0ur7AFw4o1opOdAyVbtyuwA5MTesN6UsoFgGNW203cqZhNITZbeuZTHqtUw20ycGJUCvVJsEk-zCa9D_wNhapsRt0RAQOqlpjGek52NPZphCkAF_UhwLyEzpfAItCi1na7dJzRFbgZ57yBnOI_nzx7B1VBdgFz71KW5QgHeo4jrARST0CZCR_UH2DBAm-AIB0ELMeJ" alt="ظروف نقاشی شده" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        </div>
+        <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXlLyInbeGEwgkZmTUR2yR3rao_cU68ytG2vk1LDT8zvHQ-DlRutPzqlI7c1f1SyrjdrP4InJFCbHWRENYLhp5Tj6ocRwhUi_npZh-yDbCSM5jRAKAJwbykPyjx_SURDp9sQe9BRaA4vXQjllO0tkQhs5jKsNHkX0Cx5qY2p6Rh0Q3fCzOFpSYoE6a3FmDu7KWBNo1_Xkk8k30GwSu8ExoUlwirWcEmRgiGqCuJUFtxn4R4jotptaP" alt="آباژور و چراغ شیشه‌ای" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/40 w-full py-12 px-margin-mobile md:px-margin-desktop mt-auto">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-8">
+      <div class="text-center md:text-right">
+        <span class="font-headline text-2xl text-primary font-black block mb-2">Chnoor Shop</span>
+        <p class="text-xs text-on-surface-variant max-w-sm leading-relaxed">
+          © ۱۴۰۲ فروشگاه چنور. تمامی حقوق برای هنر ویترای محفوظ است.
+        </p>
+      </div>
+
+      <nav class="flex flex-wrap justify-center gap-6 font-semibold text-xs text-on-surface-variant">
+        <a href="products.html" class="hover:text-primary transition-colors">محصولات</a>
+        <a href="custom-order.html" class="hover:text-primary transition-colors">سفارش اختصاصی</a>
+        <a href="about.html" class="hover:text-primary transition-colors">درباره ما</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">تماس با ما</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Floating Telegram Quick Widget -->
+  <a href="https://t.me/chnoorshopbot" target="_blank" class="fixed bottom-6 left-6 z-40 bg-secondary hover:bg-secondary-container hover:text-on-secondary-fixed text-on-secondary rounded-full p-4 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group border-2 border-white/40" title="سفارش در تلگرام">
+    <span class="material-symbols-outlined text-2xl" data-icon="send">send</span>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold mr-0 group-hover:mr-2">سفارش در تلگرام</span>
+  </a>
+
+  <!-- Shared JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

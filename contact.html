@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تماس با ما و سوالات متداول | Chnoor Shop</title>
+  <meta name="description" content="ارتباط مستقیم با کارگاه هنری چنور، ثبت سفارش در ربات تلگرام و پاسخ به پرسش‌های متداول در خصوص خرید و نگهداری ویترای." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#f6d9fa",
+            "secondary": "#54651e",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#f6d9fa",
+            "secondary-fixed": "#d7ec95",
+            "surface-container": "#fde7ff",
+            "on-background": "#26152c",
+            "inverse-surface": "#3c2942",
+            "outline-variant": "#cec3cc",
+            "outline": "#7d757d",
+            "secondary-fixed-dim": "#bbcf7c",
+            "on-error": "#ffffff",
+            "surface-dim": "#edd1f2",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "secondary-container": "#d7ec95",
+            "on-secondary-fixed": "#161e00",
+            "inverse-primary": "#dbbce2",
+            "on-surface": "#26152c",
+            "on-surface-variant": "#4b454c",
+            "on-primary-container": "#513a5a",
+            "surface-tint": "#6e5676",
+            "tertiary": "#5f5e5a",
+            "on-primary-fixed-variant": "#553e5e",
+            "on-primary-fixed": "#271330",
+            "primary": "#6e5676",
+            "primary-container": "#c3a6cb",
+            "background": "#fff7fb",
+            "on-tertiary-container": "#43433f",
+            "primary-fixed-dim": "#dbbce2",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#3d4c05",
+            "surface-container-high": "#fbdfff",
+            "inverse-on-surface": "#feebff",
+            "surface-bright": "#fff7fb",
+            "tertiary-container": "#b2b0aa",
+            "on-tertiary-fixed-variant": "#474743",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#ffeffe",
+            "tertiary-fixed": "#e5e2dc",
+            "surface": "#fff7fb",
+            "primary-fixed": "#f7d8ff",
+            "tertiary-fixed-dim": "#c9c6c1",
+            "on-tertiary-fixed": "#1c1c18",
+            "on-secondary-container": "#5a6b24"
+          },
+          fontFamily: {
+            "headline": ["'Vazirmatn'", "'Literata'", "serif"],
+            "body": ["'Vazirmatn'", "sans-serif"]
+          },
+          spacing: {
+            "gutter": "24px",
+            "margin-mobile": "16px",
+            "margin-desktop": "64px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- TopNavBar -->
+  <header class="glass-nav sticky top-0 w-full z-50 flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop py-4 shadow-sm">
+    <div class="flex items-center gap-3 flex-row-reverse">
+      <button data-mobile-menu-trigger class="md:hidden p-2 rounded-xl text-primary hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+      </button>
+      <a href="index.html" class="font-headline text-2xl md:text-3xl font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight">
+        Chnoor Shop
+      </a>
+    </div>
+
+    <nav class="hidden md:flex flex-row-reverse gap-8 items-center font-semibold text-sm">
+      <a href="contact.html" class="text-primary font-bold border-b-2 border-primary pb-1 px-3 py-1">تماس با ما</a>
+      <a href="about.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">درباره ما</a>
+      <a href="custom-order.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">سفارش اختصاصی</a>
+      <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">گالری</a>
+      <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">فروشگاه</a>
+      <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">خانه</a>
+    </nav>
+
+    <div class="flex items-center gap-3 text-primary">
+      <button data-search-trigger title="جستجو" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="search">search</span>
+      </button>
+      <button data-cart-trigger title="سبد خرید" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="shopping_bag">shopping_bag</span>
+        <span id="cart-badge" class="absolute -top-1 -right-1 bg-secondary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <button onclick="window.location.href='products.html'" title="علاقه‌مندی‌ها" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative hidden sm:flex cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="favorite">favorite</span>
+        <span id="wishlist-badge" class="absolute -top-1 -right-1 bg-primary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <a href="https://t.me/chnoorshopbot" target="_blank" title="پشتیبانی تلگرام" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20">
+    
+    <!-- Contact Header -->
+    <div class="text-center mb-16 fade-up">
+      <span class="inline-block bg-primary/10 text-primary font-bold text-xs px-3.5 py-1.5 rounded-full mb-3">
+        پاسخگویی و پشتیبانی صمیمانه
+      </span>
+      <h1 class="font-headline text-3xl md:text-5xl text-primary font-black mb-4">تماس با گالری چنور</h1>
+      <p class="text-base text-on-surface-variant max-w-xl mx-auto">
+        مشتاق شنیدن نظرات، سفارش‌های اختصاصی و همکاری‌های هنری شما هستیم.
+      </p>
+    </div>
+
+    <!-- Contact Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 fade-up">
+      <!-- Telegram Card -->
+      <div class="glass-card p-8 rounded-3xl text-center flex flex-col items-center border border-white/60">
+        <div class="w-16 h-16 rounded-2xl bg-[#229ED9]/15 text-[#229ED9] flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-3xl" data-icon="send">send</span>
+        </div>
+        <h3 class="font-headline text-lg font-bold text-on-surface mb-2">ربات و پشتیبانی تلگرام</h3>
+        <p class="text-xs text-outline mb-6">پاسخگویی سریع، ثبت سفارش و ارسال پیش‌نمایش طرح</p>
+        <a href="https://t.me/chnoorshopbot" target="_blank" class="mt-auto bg-[#229ED9] hover:bg-[#1a85b8] text-white font-bold text-xs px-6 py-3 rounded-xl transition-colors flex items-center gap-2">
+          <span>ورود به ربات @chnoorshopbot</span>
+        </a>
+      </div>
+
+      <!-- Instagram Card -->
+      <div class="glass-card p-8 rounded-3xl text-center flex flex-col items-center border border-white/60">
+        <div class="w-16 h-16 rounded-2xl bg-primary/15 text-primary flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-3xl" data-icon="photo_camera">photo_camera</span>
+        </div>
+        <h3 class="font-headline text-lg font-bold text-on-surface mb-2">اینستاگرام گالری</h3>
+        <p class="text-xs text-outline mb-6">مشاهده ویدیوهای فرآیند نقاشی و ویدیوهای بازی نور</p>
+        <a href="https://instagram.com" target="_blank" class="mt-auto bg-primary hover:bg-secondary text-white font-bold text-xs px-6 py-3 rounded-xl transition-colors flex items-center gap-2">
+          <span>صفحه اینستاگرام چنور</span>
+        </a>
+      </div>
+
+      <!-- Studio Location Card -->
+      <div class="glass-card p-8 rounded-3xl text-center flex flex-col items-center border border-white/60">
+        <div class="w-16 h-16 rounded-2xl bg-secondary/15 text-secondary flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-3xl" data-icon="location_on">location_on</span>
+        </div>
+        <h3 class="font-headline text-lg font-bold text-on-surface mb-2">کارگاه و آتلیه حضوری</h3>
+        <p class="text-xs text-outline mb-6">بازدید از آثار آماده با هماهنگی قبلی</p>
+        <span class="mt-auto text-xs font-bold text-on-surface-variant bg-surface-variant/60 px-4 py-2 rounded-xl">
+          ایران، اصفهان، خیابان نظر میانی
+        </span>
+      </div>
+    </div>
+
+    <!-- Quick Message Form -->
+    <div class="glass-panel rounded-3xl p-8 md:p-14 max-w-3xl mx-auto mb-24 border border-white/60 shadow-xl">
+      <div class="text-center mb-8">
+        <h2 class="font-headline text-2xl text-primary font-bold mb-2">ارسال پیام مستقیم</h2>
+        <p class="text-xs text-outline">پیام شما به صورت آنی در تلگرام پشتیبانی چنور دریافت خواهد شد.</p>
+      </div>
+
+      <form onsubmit="handleDirectMessageSubmit(event)" class="space-y-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label class="block font-headline text-xs font-bold text-on-surface-variant mb-2">نام و نام خانوادگی</label>
+            <input type="text" name="name" required placeholder="مثال: سارا محمدی" class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
+          </div>
+          <div>
+            <label class="block font-headline text-xs font-bold text-on-surface-variant mb-2">شماره تماس یا آیدی تلگرام</label>
+            <input type="text" name="contact" required placeholder="مثال: ۰۹۱۲۱۲۳۴۵۶۷ یا @username" class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-headline text-xs font-bold text-on-surface-variant mb-2">موضوع پیام</label>
+          <input type="text" name="subject" required placeholder="مثال: سوال در مورد زمان ارسال تابلو باغ ایرانی" class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-headline text-xs font-bold text-on-surface-variant mb-2">متن پیام شما</label>
+          <textarea name="message" rows="4" required placeholder="متن پیام، پرسش یا نظر ارزشمند خود را اینجا بنویسید..." class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-bold text-sm py-4 rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined" data-icon="send">send</span>
+          <span>ارسال پیام به تلگرام پشتیبانی</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- FAQ Accordion Section (سوالات متداول) -->
+    <div id="faq" class="max-w-3xl mx-auto">
+      <div class="text-center mb-12 fade-up">
+        <h2 class="font-headline text-2xl md:text-3xl text-primary font-bold mb-2">سوالات متداول مشتریان</h2>
+        <p class="text-xs text-outline">پاسخ به سوالات پرتکرار پیرامون خرید، ارسال و نگهداری ویترای</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group glass-panel rounded-2xl p-5 border border-white/60 [&_summary::-webkit-details-marker]:hidden cursor-pointer" open>
+          <summary class="flex justify-between items-center font-headline text-sm md:text-base font-bold text-on-surface list-none">
+            <span>آیا شیشه‌های ویترای در طول ارسال پستی دچار شکستگی نمی‌شوند؟</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
+          </summary>
+          <p class="mt-4 text-xs md:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-3">
+            تمامی بسته‌ها با ضربه‌گیرهای چندلایه فوم پلی‌اتیلن، محافظ‌های گوشه‌ای مخصوص و کارتن‌های دوجداره ضدضربه بسته‌بندی می‌شوند. گالری چنور تضمین سلامت ۱۰۰٪ کالا را می‌دهد و در صورت هرگونه آسیب در مسیر، تعویض رایگان انجام خواهد شد.
+          </p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group glass-panel rounded-2xl p-5 border border-white/60 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+          <summary class="flex justify-between items-center font-headline text-sm md:text-base font-bold text-on-surface list-none">
+            <span>چگونه باید آثار ویترای را تمیز کرد و شست؟</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
+          </summary>
+          <p class="mt-4 text-xs md:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-3">
+            برای گردگیری تابلوها و ظروف، کافیست از یک دستمال میکروفایبر نرم و کمی نمدار با آب ولرم استفاده کنید. از مصرف اسکاچ زبر، شوینده‌های اسیدی قوی مانند وایتکس و ماشین ظرفشویی خودداری فرمایید.
+          </p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group glass-panel rounded-2xl p-5 border border-white/60 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+          <summary class="flex justify-between items-center font-headline text-sm md:text-base font-bold text-on-surface list-none">
+            <span>سفارش اختصاصی طرح و ابعاد دلخواه چقدر زمان می‌برد؟</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
+          </summary>
+          <p class="mt-4 text-xs md:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-3">
+            بسته به پیچیدگی و ابعاد کار، فرآیند طراحی، دورگیری و تثبیت لایه‌های رنگ معمولاً بین ۵ الی ۱۰ روز کاری زمان می‌برد. مراحل کار در قالب عکس در تلگرام برای شما ارسال می‌شود.
+          </p>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group glass-panel rounded-2xl p-5 border border-white/60 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+          <summary class="flex justify-between items-center font-headline text-sm md:text-base font-bold text-on-surface list-none">
+            <span>نحوه پرداخت و ثبت سفارش در ربات تلگرام چگونه است؟</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
+          </summary>
+          <p class="mt-4 text-xs md:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-3">
+            با کلیک روی دکمه‌های خرید در سایت، لیست اقلام مستقیماً به ربات رسمی تلگرام چنور منتقل شده و پیش‌فاکتور همراه با لینک پرداخت امن یا شماره کارت معتبر در اختیارتان قرار می‌گیرد.
+          </p>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/40 w-full py-12 px-margin-mobile md:px-margin-desktop mt-auto">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-8">
+      <div class="text-center md:text-right">
+        <span class="font-headline text-2xl text-primary font-black block mb-2">Chnoor Shop</span>
+        <p class="text-xs text-on-surface-variant max-w-sm leading-relaxed">
+          © ۱۴۰۲ فروشگاه چنور. تمامی حقوق برای هنر ویترای محفوظ است.
+        </p>
+      </div>
+
+      <nav class="flex flex-wrap justify-center gap-6 font-semibold text-xs text-on-surface-variant">
+        <a href="products.html" class="hover:text-primary transition-colors">محصولات</a>
+        <a href="custom-order.html" class="hover:text-primary transition-colors">سفارش اختصاصی</a>
+        <a href="about.html" class="hover:text-primary transition-colors">درباره ما</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">تماس با ما</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Floating Telegram Quick Widget -->
+  <a href="https://t.me/chnoorshopbot" target="_blank" class="fixed bottom-6 left-6 z-40 bg-secondary hover:bg-secondary-container hover:text-on-secondary-fixed text-on-secondary rounded-full p-4 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group border-2 border-white/40" title="سفارش در تلگرام">
+    <span class="material-symbols-outlined text-2xl" data-icon="send">send</span>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold mr-0 group-hover:mr-2">سفارش در تلگرام</span>
+  </a>
+
+  <!-- Shared JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    function handleDirectMessageSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value;
+      const contact = form.contact.value;
+      const subject = form.subject.value;
+      const message = form.message.value;
+
+      let msg = `📩 پیام جدید از فرم تماس سایت چنور\n\n`;
+      msg += `👤 فرستنده: ${name}\n`;
+      msg += `📞 تماس: ${contact}\n`;
+      msg += `📌 موضوع: ${subject}\n`;
+      msg += `💬 متن پیام: ${message}`;
+
+      const botUsername = "chnoorshopbot";
+      const telegramUrl = `https://t.me/${botUsername}?text=${encodeURIComponent(msg)}`;
+
+      showToast('پیام شما ثبت شد! در حال انتقال به تلگرام...', 'send');
+      setTimeout(() => {
+        window.open(telegramUrl, '_blank');
+      }, 800);
+    }
+  </script>
+</body>
+</html>

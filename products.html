@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فروشگاه آثار ویترای و شیشه | Chnoor Shop</title>
+  <meta name="description" content="خرید انواع تابلوهای ویترای، ظروف پذیرایی نقاشی روی شیشه، آباژور و آویزهای دست‌ساز با ارسال ایمن به سراسر کشور." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#f6d9fa",
+            "secondary": "#54651e",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#f6d9fa",
+            "secondary-fixed": "#d7ec95",
+            "surface-container": "#fde7ff",
+            "on-background": "#26152c",
+            "inverse-surface": "#3c2942",
+            "outline-variant": "#cec3cc",
+            "outline": "#7d757d",
+            "secondary-fixed-dim": "#bbcf7c",
+            "on-error": "#ffffff",
+            "surface-dim": "#edd1f2",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "secondary-container": "#d7ec95",
+            "on-secondary-fixed": "#161e00",
+            "inverse-primary": "#dbbce2",
+            "on-surface": "#26152c",
+            "on-surface-variant": "#4b454c",
+            "on-primary-container": "#513a5a",
+            "surface-tint": "#6e5676",
+            "tertiary": "#5f5e5a",
+            "on-primary-fixed-variant": "#553e5e",
+            "on-primary-fixed": "#271330",
+            "primary": "#6e5676",
+            "primary-container": "#c3a6cb",
+            "background": "#fff7fb",
+            "on-tertiary-container": "#43433f",
+            "primary-fixed-dim": "#dbbce2",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#3d4c05",
+            "surface-container-high": "#fbdfff",
+            "inverse-on-surface": "#feebff",
+            "surface-bright": "#fff7fb",
+            "tertiary-container": "#b2b0aa",
+            "on-tertiary-fixed-variant": "#474743",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#ffeffe",
+            "tertiary-fixed": "#e5e2dc",
+            "surface": "#fff7fb",
+            "primary-fixed": "#f7d8ff",
+            "tertiary-fixed-dim": "#c9c6c1",
+            "on-tertiary-fixed": "#1c1c18",
+            "on-secondary-container": "#5a6b24"
+          },
+          fontFamily: {
+            "headline": ["'Vazirmatn'", "'Literata'", "serif"],
+            "body": ["'Vazirmatn'", "sans-serif"]
+          },
+          spacing: {
+            "gutter": "24px",
+            "margin-mobile": "16px",
+            "margin-desktop": "64px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container bg-vitray-pattern">
+
+  <!-- Top Navigation -->
+  <header class="glass-nav sticky top-0 w-full z-50 flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop py-4 shadow-sm">
+    <!-- Brand Logo -->
+    <div class="flex items-center gap-3 flex-row-reverse">
+      <button data-mobile-menu-trigger class="md:hidden p-2 rounded-xl text-primary hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+      </button>
+      <a href="index.html" class="font-headline text-2xl md:text-3xl font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight">
+        Chnoor Shop
+      </a>
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex flex-row-reverse gap-8 items-center font-semibold text-sm">
+      <a href="contact.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">تماس با ما</a>
+      <a href="about.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">درباره ما</a>
+      <a href="custom-order.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">سفارش اختصاصی</a>
+      <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">گالری</a>
+      <a href="products.html" class="text-primary font-bold border-b-2 border-primary pb-1 px-3 py-1">فروشگاه</a>
+      <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">خانه</a>
+    </nav>
+
+    <!-- Action Icons -->
+    <div class="flex items-center gap-3 text-primary">
+      <button data-search-trigger title="جستجو" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="search">search</span>
+      </button>
+      <button data-cart-trigger title="سبد خرید" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="shopping_bag">shopping_bag</span>
+        <span id="cart-badge" class="absolute -top-1 -right-1 bg-secondary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <button onclick="openWishlistFilter()" title="علاقه‌مندی‌ها" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative hidden sm:flex cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="favorite">favorite</span>
+        <span id="wishlist-badge" class="absolute -top-1 -right-1 bg-primary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <a href="https://t.me/chnoorshopbot" target="_blank" title="پشتیبانی تلگرام" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12 flex flex-col md:flex-row gap-8">
+    
+    <!-- Sidebar Filters (Desktop & Mobile Collapsible) -->
+    <aside class="w-full md:w-64 flex-shrink-0">
+      <div class="glass-panel rounded-2xl p-6 md:sticky md:top-28">
+        <div class="flex items-center justify-between border-b border-outline-variant/40 pb-3 mb-6">
+          <h2 class="font-headline text-lg font-bold text-primary flex items-center gap-2">
+            <span class="material-symbols-outlined text-xl" data-icon="filter_list">filter_list</span>
+            <span>فیلترها</span>
+          </h2>
+          <button onclick="resetFilters()" class="text-xs text-outline hover:text-primary underline">پاک کردن فیلترها</button>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="mb-6">
+          <h3 class="font-headline text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-3">دسته‌بندی آثار</h3>
+          <div class="space-y-2.5 text-sm">
+            <label class="flex items-center gap-3 cursor-pointer group">
+              <input type="radio" name="category" value="all" checked onchange="handleFilterChange()" class="rounded text-primary focus:ring-primary accent-primary" />
+              <span class="text-on-surface group-hover:text-primary transition-colors">همه محصولات</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer group">
+              <input type="radio" name="category" value="panels" onchange="handleFilterChange()" class="rounded text-primary focus:ring-primary accent-primary" />
+              <span class="text-on-surface group-hover:text-primary transition-colors">تابلو ویترای</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer group">
+              <input type="radio" name="category" value="dishes" onchange="handleFilterChange()" class="rounded text-primary focus:ring-primary accent-primary" />
+              <span class="text-on-surface group-hover:text-primary transition-colors">ظروف تزیینی</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer group">
+              <input type="radio" name="category" value="lighting" onchange="handleFilterChange()" class="rounded text-primary focus:ring-primary accent-primary" />
+              <span class="text-on-surface group-hover:text-primary transition-colors">چراغ و روشنایی</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer group">
+              <input type="radio" name="category" value="ornaments" onchange="handleFilterChange()" class="rounded text-primary focus:ring-primary accent-primary" />
+              <span class="text-on-surface group-hover:text-primary transition-colors">آویز و زیورآلات</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Price Range Filter -->
+        <div class="mb-6 border-t border-outline-variant/30 pt-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-headline text-xs font-bold text-on-surface-variant uppercase tracking-wider">حداکثر قیمت</h3>
+            <span id="price-display-val" class="font-bold text-secondary text-xs">بدون محدودیت (تا ۱۵,۰۰۰,۰۰۰ تومان)</span>
+          </div>
+          <input 
+            type="range" 
+            id="price-range" 
+            min="400000" 
+            max="15000000" 
+            step="100000" 
+            value="15000000" 
+            oninput="updatePriceFilter(this.value)" 
+            class="w-full accent-primary bg-surface-variant h-1.5 rounded-full appearance-none outline-none cursor-pointer" 
+          />
+          <div class="flex justify-between mt-2 text-[11px] text-outline">
+            <span>۴۰۰,۰۰۰</span>
+            <span>۱۵,۰۰۰,۰۰۰ تومان</span>
+          </div>
+        </div>
+
+        <!-- In Stock Toggle -->
+        <div class="border-t border-outline-variant/30 pt-6">
+          <h3 class="font-headline text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-3">وضعیت موجودی</h3>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" id="instock-only" onchange="handleFilterChange()" class="rounded text-primary focus:ring-primary accent-primary" />
+            <span class="text-sm text-on-surface group-hover:text-primary transition-colors">فقط کالاهای موجود و آماده ارسال</span>
+          </label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Grid Area -->
+    <section class="flex-grow flex flex-col gap-6">
+      <!-- Header Bar & Sorting -->
+      <div class="flex flex-wrap justify-between items-center bg-surface-container-lowest p-4 rounded-2xl shadow-sm border border-outline-variant/30 gap-4">
+        <div class="flex items-center gap-3">
+          <h1 class="font-headline text-xl md:text-2xl font-bold text-on-background">فروشگاه آثار</h1>
+          <span id="products-count-badge" class="bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full">۸ اثر</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-on-surface-variant font-medium hidden sm:inline">مرتب‌سازی:</span>
+          <select id="sort-select" onchange="handleFilterChange()" class="bg-surface-variant/70 border border-outline-variant/40 text-on-surface text-xs font-bold rounded-xl focus:ring-2 focus:ring-primary-container p-2.5 pr-6 outline-none cursor-pointer">
+            <option value="none" selected>بدون فیلتر (نمایش همه محصولات)</option>
+            <option value="newest">جدیدترین آثار</option>
+            <option value="popular">پرفروش‌ترین آثار</option>
+            <option value="price-low">ارزان‌ترین</option>
+            <option value="price-high">گران‌ترین</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Empty Filter State -->
+      <div id="no-products-state" class="hidden text-center py-16 glass-panel rounded-2xl">
+        <span class="material-symbols-outlined text-4xl text-outline mb-2" data-icon="search_off">search_off</span>
+        <h3 class="font-headline text-base text-on-surface mb-2">هیچ اثری با فیلترهای انتخابی پیدا نشد</h3>
+        <p class="text-xs text-outline mb-4">می‌توانید فیلترها را ریست کنید یا اثر دلخواهتان را اختصاصی سفارش دهید.</p>
+        <button onclick="resetFilters()" class="bg-primary text-white text-xs px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors">
+          نمایش همه آثار
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/40 w-full py-12 px-margin-mobile md:px-margin-desktop mt-auto">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-8">
+      <div class="text-center md:text-right">
+        <span class="font-headline text-2xl text-primary font-black block mb-2">Chnoor Shop</span>
+        <p class="text-xs text-on-surface-variant max-w-sm leading-relaxed">
+          © ۱۴۰۲ فروشگاه چنور. تمامی حقوق برای هنر ویترای محفوظ است.
+        </p>
+      </div>
+
+      <nav class="flex flex-wrap justify-center gap-6 font-semibold text-xs text-on-surface-variant">
+        <a href="products.html" class="hover:text-primary transition-colors">محصولات</a>
+        <a href="custom-order.html" class="hover:text-primary transition-colors">سفارش اختصاصی</a>
+        <a href="about.html" class="hover:text-primary transition-colors">درباره ما</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">تماس با ما</a>
+        <a href="contact.html#faq" class="hover:text-primary transition-colors">سوالات متداول</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Floating Telegram Quick Widget -->
+  <a href="https://t.me/chnoorshopbot" target="_blank" class="fixed bottom-6 left-6 z-40 bg-secondary hover:bg-secondary-container hover:text-on-secondary-fixed text-on-secondary rounded-full p-4 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group border-2 border-white/40" title="سفارش در تلگرام">
+    <span class="material-symbols-outlined text-2xl" data-icon="send">send</span>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold mr-0 group-hover:mr-2">سفارش در تلگرام</span>
+  </a>
+
+  <!-- Shared Javascript -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Page-Specific Interactive Filtering Script -->
+  <script>
+    let filterCategory = 'all';
+    let maxPrice = 15000000;
+    let onlyInStock = false;
+    let sortBy = 'none';
+
+    function renderProducts(items) {
+      const grid = document.getElementById('products-grid');
+      const emptyState = document.getElementById('no-products-state');
+      const countBadge = document.getElementById('products-count-badge');
+
+      if (!grid) return;
+
+      countBadge.textContent = toPersianDigits(items.length) + ' اثر';
+
+      if (items.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      grid.innerHTML = items.map(p => {
+        const isWishlisted = wishlist.includes(p.id);
+        const tagBadge = p.tag ? `
+          <div class="absolute top-3 right-3 ${p.tagType === 'handmade' ? 'badge-handmade' : 'badge-instock'} font-bold text-[11px] px-3 py-1 rounded-full backdrop-blur-md z-10">
+            ${p.tag}
+          </div>
+        ` : '';
+
+        return `
+          <div class="product-card glass-panel rounded-2xl overflow-hidden flex flex-col relative group shadow-sm">
+            <!-- Favorite Wishlist Button -->
+            <button 
+              onclick="toggleWishlist('${p.id}')" 
+              data-wishlist-btn="${p.id}"
+              class="absolute top-3 left-3 z-20 p-2.5 bg-white/70 backdrop-blur-md rounded-full ${isWishlisted ? 'text-error' : 'text-on-surface'} hover:text-error transition-all duration-200 active:scale-90 shadow-sm"
+              title="افزودن به علاقه‌مندی‌ها"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="${isWishlisted ? 'favorite' : 'favorite_border'}">${isWishlisted ? 'favorite' : 'favorite_border'}</span>
+            </button>
+
+            <!-- Image with Light Shimmer -->
+            <div class="relative w-full aspect-square overflow-hidden image-hover-reflection bg-surface-container-low">
+              <a href="product-detail.html?id=${p.id}" class="block w-full h-full">
+                <img 
+                  src="${p.image}" 
+                  alt="${p.title}" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                />
+              </a>
+              ${tagBadge}
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 flex flex-col flex-grow">
+              <a href="product-detail.html?id=${p.id}" class="block">
+                <h3 class="font-headline text-base font-bold text-on-surface mb-2 line-clamp-2 hover:text-primary transition-colors">
+                  ${p.title}
+                </h3>
+              </a>
+              <p class="text-xs text-outline line-clamp-1 mb-4">${p.technique} • ${p.dimensions}</p>
+              
+              <div class="mt-auto pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+                <span class="font-headline text-lg text-secondary font-black">${p.priceFormatted} <span class="text-xs font-normal text-on-surface-variant">تومان</span></span>
+                <button onclick="addToCart('${p.id}')" class="p-2 rounded-xl bg-primary/10 hover:bg-primary text-primary hover:text-white transition-colors" title="افزودن به سبد خرید">
+                  <span class="material-symbols-outlined text-lg" data-icon="add_shopping_cart">add_shopping_cart</span>
+                </button>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 mt-4">
+                <a href="product-detail.html?id=${p.id}" class="w-full text-center bg-transparent border border-outline-variant hover:border-primary hover:text-primary text-on-surface font-bold text-xs py-2.5 rounded-xl transition-all duration-200">
+                  مشاهده اثر
+                </a>
+                <a href="https://t.me/chnoorshopbot?start=order_${p.id}" target="_blank" class="w-full text-center bg-primary hover:bg-secondary text-white font-bold text-xs py-2.5 rounded-xl transition-all duration-200 flex items-center justify-center gap-1">
+                  <span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+                  <span>خرید تلگرام</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function updatePriceFilter(val) {
+      maxPrice = parseInt(val, 10);
+      if (maxPrice >= 15000000) {
+        document.getElementById('price-display-val').textContent = 'بدون محدودیت (تا ۱۵,۰۰۰,۰۰۰ تومان)';
+      } else {
+        document.getElementById('price-display-val').textContent = toPersianDigits(maxPrice.toLocaleString('en-US')) + ' تومان';
+      }
+      handleFilterChange();
+    }
+
+    function handleFilterChange() {
+      const catRadio = document.querySelector('input[name="category"]:checked');
+      if (catRadio) filterCategory = catRadio.value;
+
+      onlyInStock = document.getElementById('instock-only').checked;
+      sortBy = document.getElementById('sort-select').value;
+
+      let filtered = PRODUCTS.filter(p => {
+        if (filterCategory !== 'all' && p.category !== filterCategory) return false;
+        if (p.price > maxPrice) return false;
+        if (onlyInStock && !p.inStock) return false;
+        return true;
+      });
+
+      if (sortBy === 'price-low') {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (sortBy === 'price-high') {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (sortBy === 'popular') {
+        filtered.sort((a, b) => b.price - a.price);
+      }
+
+      renderProducts(filtered);
+    }
+
+    function resetFilters() {
+      document.querySelector('input[name="category"][value="all"]').checked = true;
+      document.getElementById('price-range').value = 15000000;
+      document.getElementById('instock-only').checked = false;
+      document.getElementById('sort-select').value = 'none';
+      updatePriceFilter(15000000);
+      handleFilterChange();
+    }
+
+    function openWishlistFilter() {
+      if (wishlist.length === 0) {
+        showToast('لیست علاقه‌مندی‌های شما خالی است', 'info');
+        return;
+      }
+      const wishlistedItems = PRODUCTS.filter(p => wishlist.includes(p.id));
+      renderProducts(wishlistedItems);
+      showToast(`نمایش ${wishlistedItems.length} اثر مورد علاقه شما`, 'favorite');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check for URL category param
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('category');
+      if (catParam) {
+        const targetRadio = document.querySelector(`input[name="category"][value="${catParam}"]`);
+        if (targetRadio) targetRadio.checked = true;
+      }
+      handleFilterChange();
+    });
+  </script>
+</body>
+</html>

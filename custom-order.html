@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سفارش اختصاصی اثر ویترای | Chnoor Shop</title>
+  <meta name="description" content="محاسبه‌گر آنلاین قیمت و ثبت سفارش اختصاصی نقاشی روی شیشه و ویترای با ابعاد، طرح و فریم دلخواه شما." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#f6d9fa",
+            "secondary": "#54651e",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#f6d9fa",
+            "secondary-fixed": "#d7ec95",
+            "surface-container": "#fde7ff",
+            "on-background": "#26152c",
+            "inverse-surface": "#3c2942",
+            "outline-variant": "#cec3cc",
+            "outline": "#7d757d",
+            "secondary-fixed-dim": "#bbcf7c",
+            "on-error": "#ffffff",
+            "surface-dim": "#edd1f2",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "secondary-container": "#d7ec95",
+            "on-secondary-fixed": "#161e00",
+            "inverse-primary": "#dbbce2",
+            "on-surface": "#26152c",
+            "on-surface-variant": "#4b454c",
+            "on-primary-container": "#513a5a",
+            "surface-tint": "#6e5676",
+            "tertiary": "#5f5e5a",
+            "on-primary-fixed-variant": "#553e5e",
+            "on-primary-fixed": "#271330",
+            "primary": "#6e5676",
+            "primary-container": "#c3a6cb",
+            "background": "#fff7fb",
+            "on-tertiary-container": "#43433f",
+            "primary-fixed-dim": "#dbbce2",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#3d4c05",
+            "surface-container-high": "#fbdfff",
+            "inverse-on-surface": "#feebff",
+            "surface-bright": "#fff7fb",
+            "tertiary-container": "#b2b0aa",
+            "on-tertiary-fixed-variant": "#474743",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#ffeffe",
+            "tertiary-fixed": "#e5e2dc",
+            "surface": "#fff7fb",
+            "primary-fixed": "#f7d8ff",
+            "tertiary-fixed-dim": "#c9c6c1",
+            "on-tertiary-fixed": "#1c1c18",
+            "on-secondary-container": "#5a6b24"
+          },
+          fontFamily: {
+            "headline": ["'Vazirmatn'", "'Literata'", "serif"],
+            "body": ["'Vazirmatn'", "sans-serif"]
+          },
+          spacing: {
+            "gutter": "24px",
+            "margin-mobile": "16px",
+            "margin-desktop": "64px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- TopNavBar -->
+  <header class="glass-nav sticky top-0 w-full z-50 flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop py-4 shadow-sm">
+    <div class="flex items-center gap-3 flex-row-reverse">
+      <button data-mobile-menu-trigger class="md:hidden p-2 rounded-xl text-primary hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+      </button>
+      <a href="index.html" class="font-headline text-2xl md:text-3xl font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight">
+        Chnoor Shop
+      </a>
+    </div>
+
+    <nav class="hidden md:flex flex-row-reverse gap-8 items-center font-semibold text-sm">
+      <a href="contact.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">تماس با ما</a>
+      <a href="about.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">درباره ما</a>
+      <a href="custom-order.html" class="text-primary font-bold border-b-2 border-primary pb-1 px-3 py-1">سفارش اختصاصی</a>
+      <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">گالری</a>
+      <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">فروشگاه</a>
+      <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors py-1 hover:bg-surface-variant/50 px-3 rounded-lg">خانه</a>
+    </nav>
+
+    <div class="flex items-center gap-3 text-primary">
+      <button data-search-trigger title="جستجو" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="search">search</span>
+      </button>
+      <button data-cart-trigger title="سبد خرید" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="shopping_bag">shopping_bag</span>
+        <span id="cart-badge" class="absolute -top-1 -right-1 bg-secondary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <button onclick="window.location.href='products.html'" title="علاقه‌مندی‌ها" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 relative hidden sm:flex cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="favorite">favorite</span>
+        <span id="wishlist-badge" class="absolute -top-1 -right-1 bg-primary text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md hidden">۰</span>
+      </button>
+      <a href="https://t.me/chnoorshopbot" target="_blank" title="پشتیبانی تلگرام" class="p-2 rounded-full hover:bg-surface-variant/60 transition-all duration-200 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20">
+    
+    <!-- Heading -->
+    <div class="text-center mb-16 fade-up">
+      <span class="inline-block bg-secondary/15 text-secondary font-bold text-xs px-3.5 py-1.5 rounded-full mb-3">
+        طراحی و ساخت مطابق با سلیقه شما
+      </span>
+      <h1 class="font-headline text-3xl md:text-5xl text-primary font-black mb-4">ثبت سفارش اختصاصی و محاسبه قیمت</h1>
+      <p class="text-base text-on-surface-variant max-w-xl mx-auto">
+        ابعاد، سبک، فریم و مشخصات اثر مورد نظر خود را مشخص نمایید تا برآورد هزینه محاسبه و مستقیماً در تلگرام ثبت شود.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <!-- Order Form (8 cols) -->
+      <div class="lg:col-span-8 glass-panel p-8 md:p-12 rounded-3xl border border-white/60 shadow-xl">
+        <form id="custom-order-form" onsubmit="submitCustomCommission(event)" class="space-y-8">
+          
+          <!-- Step 1: Type of artwork -->
+          <div>
+            <label class="block font-headline text-base font-bold text-primary mb-4 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">۱</span>
+              <span>نوع دست‌سازه شیشه‌ای را انتخاب کنید:</span>
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <label class="commission-opt-card p-4 rounded-2xl border-2 border-primary bg-primary/5 cursor-pointer flex flex-col items-center text-center transition-all">
+                <input type="radio" name="artType" value="panel" checked onchange="calcEstimate()" class="hidden" />
+                <span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="crop_original">crop_original</span>
+                <span class="font-headline text-xs font-bold text-on-surface">تابلو دیواری</span>
+                <span class="text-[11px] text-outline mt-1">پایه: ۱,۲۰۰,۰۰۰ تومان</span>
+              </label>
+
+              <label class="commission-opt-card p-4 rounded-2xl border-2 border-outline-variant/50 bg-surface-container-lowest cursor-pointer flex flex-col items-center text-center transition-all hover:border-primary/50">
+                <input type="radio" name="artType" value="suncatcher" onchange="calcEstimate()" class="hidden" />
+                <span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="brightness_medium">brightness_medium</span>
+                <span class="font-headline text-xs font-bold text-on-surface">آویز نوری پنجره</span>
+                <span class="text-[11px] text-outline mt-1">پایه: ۷۵۰,۰۰۰ تومان</span>
+              </label>
+
+              <label class="commission-opt-card p-4 rounded-2xl border-2 border-outline-variant/50 bg-surface-container-lowest cursor-pointer flex flex-col items-center text-center transition-all hover:border-primary/50">
+                <input type="radio" name="artType" value="dish" onchange="calcEstimate()" class="hidden" />
+                <span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="flatware">flatware</span>
+                <span class="font-headline text-xs font-bold text-on-surface">ظرف پذیرایی بلوری</span>
+                <span class="text-[11px] text-outline mt-1">پایه: ۶۵۰,۰۰۰ تومان</span>
+              </label>
+
+              <label class="commission-opt-card p-4 rounded-2xl border-2 border-outline-variant/50 bg-surface-container-lowest cursor-pointer flex flex-col items-center text-center transition-all hover:border-primary/50">
+                <input type="radio" name="artType" value="lamp" onchange="calcEstimate()" class="hidden" />
+                <span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="lightbulb">lightbulb</span>
+                <span class="font-headline text-xs font-bold text-on-surface">آباژور و روشنایی</span>
+                <span class="text-[11px] text-outline mt-1">پایه: ۱,۸۰۰,۰۰۰ تومان</span>
+              </label>
+
+              <label class="commission-opt-card p-4 rounded-2xl border-2 border-outline-variant/50 bg-surface-container-lowest cursor-pointer flex flex-col items-center text-center transition-all hover:border-primary/50">
+                <input type="radio" name="artType" value="mirror" onchange="calcEstimate()" class="hidden" />
+                <span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="flip">flip</span>
+                <span class="font-headline text-xs font-bold text-on-surface">آینه تزیینی ویترای</span>
+                <span class="text-[11px] text-outline mt-1">پایه: ۱,۴۰۰,۰۰۰ تومان</span>
+              </label>
+
+              <label class="commission-opt-card p-4 rounded-2xl border-2 border-outline-variant/50 bg-surface-container-lowest cursor-pointer flex flex-col items-center text-center transition-all hover:border-primary/50">
+                <input type="radio" name="artType" value="other" onchange="calcEstimate()" class="hidden" />
+                <span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="draw">draw</span>
+                <span class="font-headline text-xs font-bold text-on-surface">سایر اقلام دکوراتیو</span>
+                <span class="text-[11px] text-outline mt-1">توافقی</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Dimensions & Size -->
+          <div>
+            <label class="block font-headline text-base font-bold text-primary mb-4 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">۲</span>
+              <span>ابعاد تقریبی (سانتی‌متر):</span>
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <label class="size-opt-card p-3 rounded-xl border border-primary bg-primary/5 cursor-pointer text-center">
+                <input type="radio" name="size" value="small" checked onchange="calcEstimate()" class="hidden" />
+                <span class="font-bold text-xs text-on-surface block">کوچک (۲۰x۳۰ یا قطر ۲۰)</span>
+                <span class="text-[11px] text-outline">ضریب ۱x</span>
+              </label>
+              <label class="size-opt-card p-3 rounded-xl border border-outline-variant bg-surface-container-lowest cursor-pointer text-center">
+                <input type="radio" name="size" value="medium" onchange="calcEstimate()" class="hidden" />
+                <span class="font-bold text-xs text-on-surface block">متوسط (۳۰x۴۰ یا ۴۰x۴۰)</span>
+                <span class="text-[11px] text-outline">ضریب ۱.۴x</span>
+              </label>
+              <label class="size-opt-card p-3 rounded-xl border border-outline-variant bg-surface-container-lowest cursor-pointer text-center">
+                <input type="radio" name="size" value="large" onchange="calcEstimate()" class="hidden" />
+                <span class="font-bold text-xs text-on-surface block">بزرگ (۴۰x۶۰ یا ۵۰x۷۰)</span>
+                <span class="text-[11px] text-outline">ضریب ۲x</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Frame Selection -->
+          <div>
+            <label class="block font-headline text-base font-bold text-primary mb-4 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">۳</span>
+              <span>نوع فریم و قاب:</span>
+            </label>
+            <select name="frame" onchange="calcEstimate()" class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl p-3.5 text-sm font-semibold text-on-surface outline-none">
+              <option value="walnut">قاب چوب گردو طبیعی دست‌ساز (+ ۴۵۰,۰۰۰ تومان)</option>
+              <option value="beech">قاب چوب راش روسی مدرن (+ ۳۵۰,۰۰۰ تومان)</option>
+              <option value="metal">قاب فلزی مینیمال مات (+ ۳۰۰,۰۰۰ تومان)</option>
+              <option value="none">بدون فریم (لبه تراش‌خورده کریستالی یا استندگلس)</option>
+            </select>
+          </div>
+
+          <!-- Step 4: Customer Details & Notes -->
+          <div class="border-t border-outline-variant/30 pt-6 space-y-4">
+            <label class="block font-headline text-base font-bold text-primary flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">۴</span>
+              <span>اطلاعات تماس و توضیحات طرح:</span>
+            </label>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-on-surface-variant mb-1">نام و نام خانوادگی:</label>
+                <input type="text" name="customerName" required placeholder="نام شما" class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-primary" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-on-surface-variant mb-1">شماره تماس / آیدی تلگرام:</label>
+                <input type="text" name="customerContact" required placeholder="۰۹۱۲..." class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-primary" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-on-surface-variant mb-1">توضیحات و جزئیات طرح دلخواه شما:</label>
+              <textarea name="notes" rows="3" placeholder="توضیحاتی در خصوص تم رنگی، نوشته مورد نظر یا الهام از آثار قبلی..." class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-primary"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-headline font-bold text-base py-4 rounded-2xl shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined" data-icon="send">send</span>
+            <span>ثبت پیش‌فاکتور و ارسال مشخصات به تلگرام چنور</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Live Summary & Estimate Card (4 cols sticky) -->
+      <div class="lg:col-span-4 lg:sticky lg:top-28">
+        <div class="glass-panel p-6 rounded-3xl border border-white/80 shadow-xl bg-gradient-to-b from-surface-container-lowest to-surface-container-low">
+          <div class="flex items-center gap-3 border-b border-outline-variant/30 pb-4 mb-4">
+            <div class="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined" data-icon="calculate">calculate</span>
+            </div>
+            <div>
+              <h3 class="font-headline text-base font-bold text-on-surface">برآورد هزینه تقریبی</h3>
+              <p class="text-[11px] text-outline">محاسبه بر مبنای متریال و فریم انتخابی</p>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-xs text-on-surface-variant mb-6">
+            <div class="flex justify-between">
+              <span class="text-outline">نوع اثر:</span>
+              <span id="summary-art-type" class="font-bold text-on-surface">تابلو دیواری</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-outline">سایز انتخابی:</span>
+              <span id="summary-size" class="font-bold text-on-surface">کوچک</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-outline">فریم:</span>
+              <span id="summary-frame" class="font-bold text-on-surface">چوب گردو دست‌ساز</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-outline">زمان تخمینی ساخت:</span>
+              <span class="font-bold text-secondary">۵ تا ۷ روز کاری</span>
+            </div>
+          </div>
+
+          <div class="bg-surface-variant/50 p-4 rounded-2xl mb-6 text-center">
+            <span class="text-xs text-on-surface-variant block mb-1">مبلغ تخمینی کل:</span>
+            <span id="estimated-total" class="font-headline text-2xl text-secondary font-black">۱,۶۵۰,۰۰۰ تومان</span>
+          </div>
+
+          <div class="text-[11px] text-outline space-y-2">
+            <p class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+              <span>مشاوره و تایید اتود نهایی قبل از شروع رنگ‌آمیزی</span>
+            </p>
+            <p class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+              <span>ارسال ویدیوی پیشرفت کار در تلگرام</span>
+            </p>
+            <p class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+              <span>بسته‌بندی ایمن ضدضربه و ضمانت تحویل سالم</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/40 w-full py-12 px-margin-mobile md:px-margin-desktop mt-auto">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-8">
+      <div class="text-center md:text-right">
+        <span class="font-headline text-2xl text-primary font-black block mb-2">Chnoor Shop</span>
+        <p class="text-xs text-on-surface-variant max-w-sm leading-relaxed">
+          © ۱۴۰۲ فروشگاه چنور. تمامی حقوق برای هنر ویترای محفوظ است.
+        </p>
+      </div>
+
+      <nav class="flex flex-wrap justify-center gap-6 font-semibold text-xs text-on-surface-variant">
+        <a href="products.html" class="hover:text-primary transition-colors">محصولات</a>
+        <a href="custom-order.html" class="hover:text-primary transition-colors">سفارش اختصاصی</a>
+        <a href="about.html" class="hover:text-primary transition-colors">درباره ما</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">تماس با ما</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Floating Telegram Quick Widget -->
+  <a href="https://t.me/chnoorshopbot" target="_blank" class="fixed bottom-6 left-6 z-40 bg-secondary hover:bg-secondary-container hover:text-on-secondary-fixed text-on-secondary rounded-full p-4 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group border-2 border-white/40" title="سفارش در تلگرام">
+    <span class="material-symbols-outlined text-2xl" data-icon="send">send</span>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold mr-0 group-hover:mr-2">سفارش در تلگرام</span>
+  </a>
+
+  <!-- Shared JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const BASE_PRICES = {
+      panel: { name: 'تابلو دیواری', price: 1200000 },
+      suncatcher: { name: 'آویز نوری پنجره', price: 750000 },
+      dish: { name: 'ظرف پذیرایی بلوری', price: 650000 },
+      lamp: { name: 'آباژور و روشنایی', price: 1800000 },
+      mirror: { name: 'آینه تزیینی ویترای', price: 1400000 },
+      other: { name: 'سایر اقلام دکوراتیو', price: 900000 }
+    };
+
+    const SIZE_MULTIPLIERS = {
+      small: { name: 'کوچک', mult: 1 },
+      medium: { name: 'متوسط', mult: 1.4 },
+      large: { name: 'بزرگ', mult: 2.0 }
+    };
+
+    const FRAME_PRICES = {
+      walnut: { name: 'چوب گردو دست‌ساز', price: 450000 },
+      beech: { name: 'چوب راش روسی مدرن', price: 350000 },
+      metal: { name: 'قاب فلزی مینیمال مات', price: 300000 },
+      none: { name: 'بدون فریم (لبه تراش‌خورده)', price: 0 }
+    };
+
+    function calcEstimate() {
+      const artType = document.querySelector('input[name="artType"]:checked')?.value || 'panel';
+      const size = document.querySelector('input[name="size"]:checked')?.value || 'small';
+      const frame = document.querySelector('select[name="frame"]')?.value || 'walnut';
+
+      // Update card visual selections
+      document.querySelectorAll('.commission-opt-card').forEach(card => {
+        const input = card.querySelector('input');
+        if (input && input.checked) {
+          card.classList.add('border-primary', 'bg-primary/5');
+          card.classList.remove('border-outline-variant/50', 'bg-surface-container-lowest');
+        } else {
+          card.classList.remove('border-primary', 'bg-primary/5');
+          card.classList.add('border-outline-variant/50', 'bg-surface-container-lowest');
+        }
+      });
+
+      document.querySelectorAll('.size-opt-card').forEach(card => {
+        const input = card.querySelector('input');
+        if (input && input.checked) {
+          card.classList.add('border-primary', 'bg-primary/5');
+          card.classList.remove('border-outline-variant', 'bg-surface-container-lowest');
+        } else {
+          card.classList.remove('border-primary', 'bg-primary/5');
+          card.classList.add('border-outline-variant', 'bg-surface-container-lowest');
+        }
+      });
+
+      const base = BASE_PRICES[artType] || BASE_PRICES.panel;
+      const sz = SIZE_MULTIPLIERS[size] || SIZE_MULTIPLIERS.small;
+      const fr = FRAME_PRICES[frame] || FRAME_PRICES.walnut;
+
+      const total = Math.round((base.price * sz.mult) + fr.price);
+
+      document.getElementById('summary-art-type').textContent = base.name;
+      document.getElementById('summary-size').textContent = sz.name;
+      document.getElementById('summary-frame').textContent = fr.name;
+      document.getElementById('estimated-total').textContent = toPersianDigits(total.toLocaleString('en-US')) + ' تومان';
+    }
+
+    function submitCustomCommission(e) {
+      e.preventDefault();
+      const form = e.target;
+      const artType = BASE_PRICES[form.artType.value]?.name || form.artType.value;
+      const size = SIZE_MULTIPLIERS[form.size.value]?.name || form.size.value;
+      const frame = FRAME_PRICES[form.frame.value]?.name || form.frame.value;
+      const total = document.getElementById('estimated-total').textContent;
+      const name = form.customerName.value;
+      const contact = form.customerContact.value;
+      const notes = form.notes.value || 'ندارد';
+
+      let msg = `✨ درخواست جدید سفارش ساخت ویترای اختصاصی\n\n`;
+      msg += `👤 نام سفارش‌دهنده: ${name}\n`;
+      msg += `📞 اطلاعات تماس: ${contact}\n`;
+      msg += `🎨 نوع اثر: ${artType}\n`;
+      msg += `📏 سایز: ${size}\n`;
+      msg += `🖼️ نوع فریم: ${frame}\n`;
+      msg += `💰 برآورد قیمت تقریبی: ${total}\n`;
+      msg += `📝 توضیحات تکمیلی: ${notes}\n\n`;
+      msg += `لطفاً جهت هماهنگی و تایید طرح با من تماس حاصل فرمایید.`;
+
+      const botUsername = "chnoorshopbot";
+      const telegramUrl = `https://t.me/${botUsername}?text=${encodeURIComponent(msg)}`;
+
+      showToast('پیش‌فاکتور آماده شد! در حال هدایت به تلگرام...', 'check_circle');
+      setTimeout(() => {
+        window.open(telegramUrl, '_blank');
+      }, 800);
+    }
+
+    document.addEventListener('DOMContentLoaded', calcEstimate);
+  </script>
+</body>
+</html>
